@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: dev-server
+
+  redis:
+    host: 192.168.16.128
+    port: 6379
+    password: 123
+    timeout: 15000
+    pool:
+      max-wait: 15000
+service:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.16.128:3306/test?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    initialSize: 1
+    maxActive: 10
+    maxWait: 10000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,config
+
+  redirectUrl: http://www.baidu.com
+  qrcodeLoginPath: http://localhost:9090/server/
+
+
