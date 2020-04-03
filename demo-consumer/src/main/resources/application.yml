@@ -1,0 +1,12 @@
+#server:
+#  port: 9091
+spring:
+  application:
+    name: consumer
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    hostname: localhost

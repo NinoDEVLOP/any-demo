@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -17,6 +18,7 @@ import java.util.Arrays;
  */
 @SpringBootApplication(scanBasePackages = {"com.fun.learn"})
 @EnableConfigurationProperties
+@EnableAspectJAutoProxy
 public class SsoSpringApplication {
 
     public static void main(String[] args) {

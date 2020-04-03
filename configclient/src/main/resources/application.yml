@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    hostname: localhost
+
+spring:
+  profiles:
+    active: cloud
+management:
+  security:
+    enabled: false

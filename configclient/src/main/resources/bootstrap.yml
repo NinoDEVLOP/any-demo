@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: configclient
+  cloud:
+    config:
+      enabled: true
+      profile: cloud
+

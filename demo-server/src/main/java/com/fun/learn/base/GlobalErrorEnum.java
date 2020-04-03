@@ -20,6 +20,8 @@ public enum GlobalErrorEnum {
 
     QRCODE_TIMEOUT_ERROR("401", "二维码已过期"),
 
+    SERVER_BUSY("9998", "服务器繁忙，请稍后重试"),
+
     UNKNOWN_ERROR("9999", "服务器未知异常");
 
     @Getter

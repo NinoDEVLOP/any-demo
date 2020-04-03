@@ -3,7 +3,7 @@ spring:
     name: dev-server
 
   redis:
-    host: 192.168.16.128
+    host: 192.168.16.129
     port: 6379
     password: 123
     timeout: 15000
@@ -12,7 +12,7 @@ spring:
 service:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.16.128:3306/test?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://192.168.16.129:3306/test?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
     initialSize: 1
